@@ -1,0 +1,62 @@
+{% load static %}
+{% block content %}
+
+        <div class="slider-wrap">
+            <div id="slider_1" class="owl-carousel" data-nav="true" data-dots="false" data-autoplay="true" data-autoplaytimeout="17000">
+
+                <div class="slider_item_container" data-bg_img="{% static 'images/home_1_slider_1.jpg' %}" data-bg_color="#555555" data-bg_opacity="0.0" >
+                    <div class="item">
+                        <div class="slider-content">
+                            <div class="container text-center">
+                                <div class="row">
+                                    <div class="slider-bg">
+                                         <div class="slider-bg" data-animation-in="zoomInUp" data-animation-out="zoomInDown">
+                                        <div class="col-sm-12 wow zoomInUp" data-wow-duration="1s">
+
+                                                <h3> রক্ত  দেন  জীবন বাঁচান!</h3>
+                                                <h2>
+                                                     আপনার  রক্ত  দান  হতে  পারে
+                                                    <br>
+                                                     কারো  জীবন  বাঁচার  কারণ
+                                                    <br/>
+
+                                                </h2>
+                                                <a href="{% url 'donor' %}" class="btn btn-theme margin-top-24">রক্তদাতা খুজে নিন এখান থেকে</a>
+                                                <a href="#" class="btn btn-theme btn-theme-invert margin-top-24">রক্তদাতা হিসাবে রেজিস্ট্রেশন করুন</a>
+                                            </div>
+                                    </div> <!-- end .col-sm-12  -->
+                                </div> <!-- end .row  -->
+                            </div><!-- end .container -->
+                        </div> <!--  end .slider-content -->
+                    </div> <!-- end .item  -->
+                </div> <!-- end .slider_item_container  -->
+                </div>
+                <div class="slider_item_container" data-bg_img="{% static 'images/event_single.jpg' %}" data-bg_color="#555555" data-bg_opacity="0.0" >
+                    <div class="item">
+                        <div class="slider-content">
+                            <div class="container text-center">
+                                <div class="row">
+                                    <div class="slider-bg" data-animation-in="zoomInUp" data-animation-out="zoomInDown">
+                                        <div class="col-sm-12 wow fadeInDown" data-wow-duration="1s">
+
+                                            <h3>রক্ত  দেন  জীবন বাঁচান!</h3>
+                                                <h2>
+                                                     নিজে  রক্তদিন
+                                                    <br>
+                                                     এবং  অন্যদের  অনুপ্রাণিত  করুন
+                                                </h2>
+                                                <a href="{% url 'donor' %}" class="btn btn-theme margin-top-24">রক্তদাতা খুজে নিন এখান থেকে</a>
+                                                <a href="#" class="btn btn-theme btn-theme-invert margin-top-24">রক্তদাতা হিসাবে রেজিস্ট্রেশন করুন</a>
+
+                                        </div>
+                                    </div> <!-- end .col-sm-12  -->
+                                </div> <!-- end .row  -->
+                            </div><!-- end .container -->
+                        </div> <!--  end .slider-content -->
+                    </div> <!-- end .item  -->
+                </div> <!-- end .slider_item_container  -->
+
+            </div> <!-- end .slider_1  -->
+        </div> <!-- end .slider-wrap.  -->
+
+{% endblock %}

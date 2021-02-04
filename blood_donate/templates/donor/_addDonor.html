@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <section class="section-content-block section-secondary-bg">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-sm-6 wow fadeInLeft">
+
+                        <div class="contact-form-block">
+
+                            <h2 class="contact-title"> রক্ত  দিতে  নিচের   তথ্য  গুলো  প্রদান   করুন </h2>
+
+                            <form role="form" action="#" method="post" id="contact-form">
+                                 <div class="form-group">
+                                    <input type="text" class="form-control" id="user_name" name="user_name" placeholder="Name" data-msg="Please Write Your Name" />
+                                </div>
+
+                            <div>
+                                <label for="blood_group">Select Blood Group :</label>
+
+                                   <select name="Select_Blood_Group" id="blood_group">
+                                       <option value="A+">A+</option>
+                                       <option value="A-">A-</option>
+                                       <option value="B+">B+</option>
+                                       <option value="B+">B-</option>
+                                       <option value="B+">AB+</option>
+                                       <option value="B+">AB-</option>
+                                       <option value="B+">O+</option>
+                                       <option value="B+">O-</option>
+                                   </select>
+                               </div>
+                                <div>
+                                 <label for="District">Select District:</label>
+
+                                   <select name="District" id="District">
+                                       <option value="Dhaka">Dhaka</option>
+                                       <option value="Rangpur">Rangpur</option>
+                                       <option value="Kurigram">Kurigram</option>
+                                       <option value="B+">B-</option>
+                                       <option value="B+">AB+</option>
+                                       <option value="B+">AB-</option>
+                                       <option value="B+">O+</option>
+                                       <option value="B+">O-</option>
+                                   </select>
+                                    </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-theme">Submit</button>
+                                </div>
+                            </form>
+
+                        </div> <!-- end .contact-form-block  -->
+
+                    </div>
+                </div>
+            </div></section>
+{% endblock %}
