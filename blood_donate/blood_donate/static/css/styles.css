@@ -972,7 +972,7 @@ header.one-page .navbar-nav > li > a span {
 /* 04. HOME PAGE */
 /***********************************************************************************************/
 .section-content-block {
-  padding: 20px 0 100px 0;
+  padding: 100px 0 100px 0;
   background: #FFFFFF;
 }
 .section-heading-wrapper {
@@ -2438,7 +2438,7 @@ a.btn-cta-3:hover {
   width: 100%;
 }
 .testimonial-container {
-  /*padding: 80px 0px;*/
+  padding: 80px 0px;
   clear: both;
 }
 .testimonial-container .owl-nav {
