@@ -972,7 +972,7 @@ header.one-page .navbar-nav > li > a span {
 /* 04. HOME PAGE */
 /***********************************************************************************************/
 .section-content-block {
-  padding: 100px 0 100px 0;
+  padding: 10px 0 100px 0;
   background: #FFFFFF;
 }
 .section-heading-wrapper {
@@ -2438,7 +2438,6 @@ a.btn-cta-3:hover {
   width: 100%;
 }
 .testimonial-container {
-  padding: 80px 0px;
   clear: both;
 }
 .testimonial-container .owl-nav {
@@ -5654,7 +5653,7 @@ span.border-bold-dashed {
     margin-bottom: 12px;
   }
   .section-content-block {
-    padding: 60px 0;
+    padding: 10px 0;
   }
   .margin-top-appointment-reverse,
   .margin-top-reverse-220 {
@@ -6049,7 +6048,7 @@ span.border-bold-dashed {
     margin-bottom: 0px;
   }
   .section-content-block {
-    padding: 32px 0;
+    padding: 0px 0;
   }
   .margin-top-appointment-reverse,
   .margin-top-reverse-220 {
@@ -6192,7 +6191,7 @@ span.border-bold-dashed {
     padding: 0 0px;
   }
   .testimonial-container {
-    padding: 24px 0px;
+    padding: 10px 0px;
   }
   .testimonial-container.text-left .owl-dots {
     text-align: left;
