@@ -972,7 +972,7 @@ header.one-page .navbar-nav > li > a span {
 /* 04. HOME PAGE */
 /***********************************************************************************************/
 .section-content-block {
-  padding: 10px 0 100px 0;
+  padding: 50px 0 100px 0;
   background: #FFFFFF;
 }
 .section-heading-wrapper {
@@ -6048,7 +6048,7 @@ span.border-bold-dashed {
     margin-bottom: 0px;
   }
   .section-content-block {
-    padding: 0px 0;
+    padding: 50px 0;
   }
   .margin-top-appointment-reverse,
   .margin-top-reverse-220 {

@@ -10,18 +10,10 @@
                 <a class="logo" href="index-2.html"><img alt="" src="{% static 'images/logo.png' %}"></a>
          </div>
 
-
-        <!--highlight on all page logic-->
                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                     <div>
-                     <ul class="nav navbar-nav navbar-right"><li>
-                         <a class="nav-link" href="{% url 'home' %}"> হোম </a></li>
-                     </ul>
-                         </div>
-
                  <div>
                      <ul class="nav navbar-nav navbar-right"><li>
-                       <a class="nav-link" href="{% url 'home' %}">  এবাউট </a></li>
+                       <a class="nav-link" href="{% url 'login' %}">   লগইন  </a></li>
                      </ul>
                  </div>
                  <div>
@@ -30,21 +22,24 @@
                     </ul>
                  </div>
 
-                      <div>
+                    <!--  <div>
                     <ul class="nav navbar-nav navbar-right">
                       <li>  <a class="nav-link" href="{% url 'adddonor' %}">  রক্ত দাতা</a></li>
                     </ul>
-                 </div>
+                 </div> -->
 
                       <div>
                     <ul class="nav navbar-nav navbar-right">
                       <li>  <a class="nav-link" href="{% url 'donor' %}">  রক্ত  গ্রহীতা </a></li>
                     </ul>
                       </div>
+                     <div>
+                     <ul class="nav navbar-nav navbar-right"><li>
+                         <a class="nav-link" href="{% url 'home' %}"> হোম </a></li>
+                     </ul>
+                         </div>
                  </div>
 
   </div>
-
-  <!-- end main-header  -->
 
  </nav>
