@@ -11,6 +11,7 @@ from django.template.loader import render_to_string
 from django.contrib.auth import get_user_model
 
 
+
 def register(request):
     if request.method == "POST":
         method_dict = request.POST.copy()
@@ -47,7 +48,7 @@ def register(request):
                         messages.success(request, 'Successfully Created Account  '
                                                   ' Thank You!')
                     except:
-                        messages.error(request, 'Account Created but EMAIL is not confirm. ')
+                        messages.error(request, 'Account Created but EMAIL is not confirm.')
 
                     messages.success(request, 'Registration successfully completed!!!')
                     return HttpResponseRedirect(reverse('login'))

@@ -16,18 +16,18 @@
                             <h2 class="contact-title"> রক্ত  দিতে  নিচের   তথ্য  গুলো  প্রদান   করুন </h2>
 
                             <form role="form" action="#" method="post" id="contact-form">
-                                 <div class="form-group col-md-12">
-                                    <input id="your_name" class="form-control" placeholder="Name" type="text">
+                                 <div class="form-group col-md-6">
+                                    <input id="name" class="form-control" placeholder="Name" name="name" type="text">
                                 </div>
-                               <div class="form-group col-md-12">
-                                    <input id="your_email" class="form-control" placeholder="Email" type="email">
+                               <div class="form-group col-md-6">
+                                    <input id="email" class="form-control" placeholder="Email" name="email" type="email">
                                 </div>
-                                <div class="form-group col-md-12">
-                                    <input id="phone_number" class="form-control" placeholder="Phone Number" type="text">
+                                <div class="form-group col-md-6">
+                                    <input id="phone_Number" class="form-control" placeholder="Phone Number" name="phone_Number" type="text">
                                 </div>
 
                              <div class="form-group col-md-6">
-                                <select class="form-control" placeholder="Select_Blood_Group" id="blood_group">
+                                <select class="form-control" placeholder="Select_Blood_Group" name="select_Blood_Group" id="select_Blood_Group">
                                        <option value="Group">Select Your Blood Group</option>
                                        <option value="A+">A+</option>
                                        <option value="A-">A-</option>
@@ -42,7 +42,7 @@
 
 
                                   <div class="form-group col-md-6">
-                                    <select class="form-control" placeholder="District" id="District">
+                                    <select class="form-control" placeholder="District" name="district" id="district">
                                        <option value="Group">Select Your District</option>
                                        <option value="Dhaka">Dhaka</option>
                                        <option value="Rangpur">Rangpur</option>
@@ -101,12 +101,11 @@
                                    </select>
                                     </div>
 
-                                 <div class="form-group col-md-12">
-                                    <input id="donate_date" class="form-control" placeholder="Last Donate Date" type="date">
+                                 <div class="form-group col-md-6">
+                                    <input id="last_Donate_Date" class="form-control" placeholder="Last Donate Date" name="last_Donate_Date" type="date">
                                  </div>
-
                                 <div class="form-group">
-                                    <button type="submit" class="btn btn-theme">Submit</button>
+                                   <button type="submit" class="form-control btn btn-primary text-uppercase" style="color: black"><strong>Submit</strong></button>
                                 </div>
                             </form>
 

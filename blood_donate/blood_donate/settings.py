@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+from django.utils import six
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -39,7 +40,7 @@ INSTALLED_APPS = [
     'abouts',
     'contacts',
     'addDonors',
-    'rest_framework',
+
 ]
 
 MIDDLEWARE = [
@@ -138,3 +139,20 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'tamannatoma2146@gmail.com'
 EMAIL_HOST_PASSWORD = 'effattamanna09'
 EMAIL_PORT = 587
+
+#phone Number verification
+PHONE_VERIFICATION = {
+    "BACKEND": "phone_verify.backends.twilio.TwilioBackend",
+    "OPTIONS": {
+        "SID": "fake",
+        "SECRET": "fake",
+        "FROM": "+14755292729",
+        "SANDBOX_TOKEN": "123456",
+    },
+    "TOKEN_LENGTH": 6,
+    "MESSAGE": "Welcome to {app}! Please use security code {security_code} to proceed.",
+    "APP_NAME": "Phone Verify",
+    "SECURITY_CODE_EXPIRATION_TIME": 3600,  # In seconds only
+    "VERIFY_SECURITY_CODE_ONLY_ONCE": False,
+    # If False, then a security code can be used multiple times for verification
+}
