@@ -1,0 +1,46 @@
+<!-- search form-->
+{% load static %}
+ {% load humanize %}
+     <section id="showcase-inner" class="showcase-search text-white py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 wow fadeInLeft">
+                        <div class="contact-form-block">
+                            <h2 class="contact-title">রক্তদাতা খুজে নিন এখান থেকে</h2>
+                            <form action="{% url 'donor' %}">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" name="select_Blood_Group" value="{{ method_dict.select_Blood_Group }}">
+{#                                <select class="form-control" placeholder="Select_Blood_Group" id="select_Blood_Group" name="select_Blood_Group">#}
+{#                                       <option>Select Your Blood Group</option>#}
+{#                                       <option>Select Your Blood Group</option>#}
+{#                                       <option value="A+">A+</option>#}
+{#                                       <option value="A-">A-</option>#}
+{#                                       <option value="B+">B+</option>#}
+{#                                       <option value="B+">B-</option>#}
+{#                                       <option value="B+">AB+</option>#}
+{#                                       <option value="B+">AB-</option>#}
+{#                                       <option value="B+">O+</option>#}
+{#                                       <option value="B+">O-</option>#}
+{#                                   </select>#}
+                               </div>
+
+
+                                  <div class="form-group col-md-6">
+                                      <input type="text" class="form-control" value="{{ method_dict.district }}" name="district">
+{#                                    <select class="form-control" placeholder="District" id="district" name="district" value="{{ method_dict.district }}">#}
+{#                                       <option value="Group">Select Your District</option>#}
+{#                                       <option value="Dhaka">Dhaka</option>#}
+{#                                       <option value="Rangpur">Rangpur</option>#}
+{#                                       <option value="Kurigram">Kurigram</option>#}
+{#                                       <option value="Jhalokati">Jhalokati</option>#}
+{#                                   </select>#}
+                                    </div>
+                               <div class="text-center">
+                                   <input type="submit" style="text-align: center;" class="btn btn-info" name="search" value="Search"/>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</section>

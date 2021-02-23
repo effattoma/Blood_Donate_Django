@@ -15,7 +15,7 @@
 
                             <h2 class="contact-title"> রক্ত  দিতে  নিচের   তথ্য  গুলো  প্রদান   করুন </h2>
 
-                            <form role="form" action="#" method="post" id="contact-form">
+                            <form role="form" action="#" method="post" id="contact-form"> {% csrf_token %}
                                  <div class="form-group col-md-6">
                                     <input id="name" class="form-control" placeholder="Name" name="name" type="text">
                                 </div>
@@ -105,8 +105,8 @@
                                     <input id="last_Donate_Date" class="form-control" placeholder="Last Donate Date" name="last_Donate_Date" type="date">
                                  </div>
                                 <div class="form-group">
-                                   <button type="submit" class="form-control btn btn-primary text-uppercase" style="color: black"><strong>Submit</strong></button>
-                                </div>
+                                   <input class="btn btn-outline-primary" type="submit" style="margin: auto; display: block" value="Submit">
+                                 </div>
                             </form>
 
                         </div>
